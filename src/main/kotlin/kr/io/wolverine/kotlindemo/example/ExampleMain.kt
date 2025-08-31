@@ -20,7 +20,7 @@ fun main() {
     println(numbers)
 
     // 객체 인스턴스 생성시 new 를 붙이지 않아도 된다. Java -> new Person("Jung");
-    val person = Person("Jung")
+    val person = JavaPerson("Jung")
     println(person.name)
 
     // 개발자가 타입 boxing unboxing 고려하지 않아도 된다, 언어 레벨에서 알아서해줌
@@ -58,6 +58,6 @@ fun main() {
     // startWithJ(person2.name) java class의 getName 메소드에 @Nullable이 붙어 있어서 오류가 발생
     // 만약 Nullable이 없다면 kotlin에서는 이 값이 nullable인지 non-nullable인지 알 수가 없다. 이 타입을 플랫폼 타입이라고 한다
     // Runtime시 Exception이 발생할 수 있다.
-    val person3 = Person(null)
+    val person3 = JavaPerson(null)
     // startWithJ(person3.name) <- runtime시 에러 발생한다
 }

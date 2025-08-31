@@ -29,7 +29,7 @@ fun main() {
     // 무조건 예외가 발생하는 함수의 반환 타입, 무한 루프 함수 등
 
     // String interpolation
-    val person = Person("Jung")
+    val person = JavaPerson("Jung")
     println("나의 이름은 ${person.name}")
 
     // 간단한 변수는 $만으로 표현 가능

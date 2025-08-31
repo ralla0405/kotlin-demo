@@ -1,10 +1,10 @@
 package kr.io.wolverine.kotlindemo.example;
 
-public class Person {
+public class JavaPerson {
 
     private final String name;
 
-    public Person(String name) {
+    public JavaPerson(String name) {
         this.name = name;
     }
 
